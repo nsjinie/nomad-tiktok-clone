@@ -51,17 +51,16 @@ class SignUpScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               Gaps.v40,
-              GestureDetector(
-                onTap: () => _onEmailTab(context),
-                child: const AuthButton(
-                  icon: FaIcon(FontAwesomeIcons.user),
-                  text: 'Use phone or email',
-                ),
+              AuthButton(
+                icon: const FaIcon(FontAwesomeIcons.user),
+                text: 'Use phone or email',
+                onTabFunc: _onEmailTab,
               ),
               Gaps.v16,
-              const AuthButton(
-                icon: FaIcon(FontAwesomeIcons.apple),
+              AuthButton(
+                icon: const FaIcon(FontAwesomeIcons.apple),
                 text: 'Continue with Apple',
+                onTabFunc: (context) {},
               ),
             ],
           ),
