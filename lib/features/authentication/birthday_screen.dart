@@ -38,7 +38,7 @@ class _BirthdayScreenState extends State<BirthdayScreen> {
   }
 
   void _setTextFieldDate(DateTime date) {
-    debugPrint(date.toString().split(' ').first);
+    //debugPrint(date.toString().split(' ').first);
     final textDate = date.toString().split(' ').first;
     _birthdayController.value = TextEditingValue(text: textDate);
   }
